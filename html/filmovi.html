@@ -4,20 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filmovi</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/filmovi.css" />
+  <link rel="stylesheet" href="filmovi.css" />
 </head>
 <body>
 
 <nav>
+  <span class="logo">Kino Sala</span>
   <ul>
+    <li><a href="#pocetna">Početna</a></li>
     <li><a href="#filmovi">Filmovi</a></li>
-    <li><a href="#raspored">Raspored</a></li>
-    <li><a href="#sala">Sala</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
   </ul>
 </nav>
 
 <glavna id="filmovi">
+
+  <naslov-stranice>Filmovi iz naše ponude...</naslov-stranice>
+
+  <filteri>
+    <button>Filteri</button>
+  </filteri>
 
   <legenda>
     <stavka-legende><oznaka class="sada"></oznaka> Trenutno u kinima</stavka-legende>
@@ -28,103 +34,217 @@
   <zanr id="akcija">
     <naslov-zanra>Akcija</naslov-zanra>
     <mreza>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Mission: Impossible – The Final Reckoning</naziv-filma><trajanje>163 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/tBwP8KSx9SBcMkyfMFjhDnZiTDk.jpg" alt="Mission: Impossible" /></poster>
+        <info>
+          <naziv-filma>Mission: Impossible – The Final Reckoning</naziv-filma>
+          <red-info>Minutaža: 163 min</red-info>
+          <red-info>Režiser: Christopher McQuarrie</red-info>
+          <red-info>Glumci: Tom Cruise, Hayley Atwell</red-info>
+        </info>
       </film>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Thunderbolts*</naziv-filma><trajanje>127 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg" alt="Thunderbolts" /></poster>
+        <info>
+          <naziv-filma>Thunderbolts*</naziv-filma>
+          <red-info>Minutaža: 127 min</red-info>
+          <red-info>Režiser: Jake Schreier</red-info>
+          <red-info>Glumci: Florence Pugh, Sebastian Stan</red-info>
+        </info>
       </film>
+
       <film class="uskoro">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>The Accountant 2</naziv-filma><trajanje>132 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="The Accountant 2" /></poster>
+        <info>
+          <naziv-filma>The Accountant 2</naziv-filma>
+          <red-info>Minutaža: 132 min</red-info>
+          <red-info>Režiser: Gavin O'Connor</red-info>
+          <red-info>Glumci: Ben Affleck, Jon Bernthal</red-info>
+        </info>
       </film>
+
       <film class="zavrseno">
-        <poster><svg viewBox="0 0 24 24" fill="#888"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Kraven the Hunter</naziv-filma><trajanje>127 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/i47IUSsN126K11JUzqQIOi1Mg1M.jpg" alt="Kraven the Hunter" /></poster>
+        <info>
+          <naziv-filma>Kraven the Hunter</naziv-filma>
+          <red-info>Minutaža: 127 min</red-info>
+          <red-info>Režiser: J.C. Chandor</red-info>
+          <red-info>Glumci: Aaron Taylor-Johnson</red-info>
+        </info>
       </film>
+
       <film class="zavrseno">
-        <poster><svg viewBox="0 0 24 24" fill="#888"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Captain America: Brave New World</naziv-filma><trajanje>118 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg" alt="Captain America" /></poster>
+        <info>
+          <naziv-filma>Captain America: Brave New World</naziv-filma>
+          <red-info>Minutaža: 118 min</red-info>
+          <red-info>Režiser: Julius Onah</red-info>
+          <red-info>Glumci: Anthony Mackie, Harrison Ford</red-info>
+        </info>
       </film>
+
     </mreza>
   </zanr>
 
   <zanr id="drama">
     <naslov-zanra>Drama</naslov-zanra>
     <mreza>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Conclave</naziv-filma><trajanje>120 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/m5x8D0bZ53bpSGGCZG0AKmX5YZq.jpg" alt="Conclave" /></poster>
+        <info>
+          <naziv-filma>Conclave</naziv-filma>
+          <red-info>Minutaža: 120 min</red-info>
+          <red-info>Režiser: Edward Berger</red-info>
+          <red-info>Glumci: Ralph Fiennes, Stanley Tucci</red-info>
+        </info>
       </film>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>September 5</naziv-filma><trajanje>94 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/5g8Gj0DFAPbQVXrJsMEWMiaTFBM.jpg" alt="September 5" /></poster>
+        <info>
+          <naziv-filma>September 5</naziv-filma>
+          <red-info>Minutaža: 94 min</red-info>
+          <red-info>Režiser: Tim Fehlbaum</red-info>
+          <red-info>Glumci: Peter Sarsgaard, Ben Chaplin</red-info>
+        </info>
       </film>
+
       <film class="uskoro">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Final Destination: Bloodlines</naziv-filma><trajanje>110 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg" alt="Final Destination" /></poster>
+        <info>
+          <naziv-filma>Final Destination: Bloodlines</naziv-filma>
+          <red-info>Minutaža: 110 min</red-info>
+          <red-info>Režiser: Zach Lipovsky</red-info>
+          <red-info>Glumci: Teo Briones, Kaitlyn Santa Juana</red-info>
+        </info>
       </film>
+
       <film class="zavrseno">
-        <poster><svg viewBox="0 0 24 24" fill="#888"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Nickel Boys</naziv-filma><trajanje>140 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/sN2BXBdulXOoIIBPaxRMoRsGWxh.jpg" alt="Nickel Boys" /></poster>
+        <info>
+          <naziv-filma>Nickel Boys</naziv-filma>
+          <red-info>Minutaža: 140 min</red-info>
+          <red-info>Režiser: RaMell Ross</red-info>
+          <red-info>Glumci: Ethan Herisse, Brandon Wilson</red-info>
+        </info>
       </film>
+
     </mreza>
   </zanr>
 
   <zanr id="komedija">
     <naslov-zanra>Komedija</naslov-zanra>
     <mreza>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Novocaine</naziv-filma><trajanje>110 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/iiEMCEMlr4bZGLJgGpNASerBJCP.jpg" alt="Novocaine" /></poster>
+        <info>
+          <naziv-filma>Novocaine</naziv-filma>
+          <red-info>Minutaža: 110 min</red-info>
+          <red-info>Režiser: Dan Berk, Robert Olsen</red-info>
+          <red-info>Glumci: Jack Quaid, Amber Midthunder</red-info>
+        </info>
       </film>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>You're Cordially Invited</naziv-filma><trajanje>100 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/A5JHoTSnJBkngPzOSuvBHiRYjr0.jpg" alt="You're Cordially Invited" /></poster>
+        <info>
+          <naziv-filma>You're Cordially Invited</naziv-filma>
+          <red-info>Minutaža: 100 min</red-info>
+          <red-info>Režiser: Nicholas Stoller</red-info>
+          <red-info>Glumci: Will Ferrell, Reese Witherspoon</red-info>
+        </info>
       </film>
+
       <film class="uskoro">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Lilo &amp; Stitch</naziv-filma><trajanje>108 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/eXDPOsHWyAovLNVsPd97BNGcCJo.jpg" alt="Lilo and Stitch" /></poster>
+        <info>
+          <naziv-filma>Lilo &amp; Stitch</naziv-filma>
+          <red-info>Minutaža: 108 min</red-info>
+          <red-info>Režiser: Dean Fleischer Camp</red-info>
+          <red-info>Glumci: Maia Kealoha, Sydney Agudong</red-info>
+        </info>
       </film>
+
       <film class="zavrseno">
-        <poster><svg viewBox="0 0 24 24" fill="#888"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Carry-On</naziv-filma><trajanje>123 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/sQDnBBhurMBxgAQRIE2444oJOus.jpg" alt="Carry-On" /></poster>
+        <info>
+          <naziv-filma>Carry-On</naziv-filma>
+          <red-info>Minutaža: 123 min</red-info>
+          <red-info>Režiser: Jaume Collet-Serra</red-info>
+          <red-info>Glumci: Taron Egerton, Sofia Carson</red-info>
+        </info>
       </film>
+
     </mreza>
   </zanr>
 
   <zanr id="animirani">
     <naslov-zanra>Animirani</naslov-zanra>
     <mreza>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>The Wild Robot</naziv-filma><trajanje>102 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg" alt="The Wild Robot" /></poster>
+        <info>
+          <naziv-filma>The Wild Robot</naziv-filma>
+          <red-info>Minutaža: 102 min</red-info>
+          <red-info>Režiser: Chris Sanders</red-info>
+          <red-info>Glumci: Lupita Nyong'o, Pedro Pascal</red-info>
+        </info>
       </film>
+
       <film class="sada">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Flow</naziv-filma><trajanje>84 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/iMBSITPTiXHsTF6eBjB0vlXM3hv.jpg" alt="Flow" /></poster>
+        <info>
+          <naziv-filma>Flow</naziv-filma>
+          <red-info>Minutaža: 84 min</red-info>
+          <red-info>Režiser: Gints Zilbalodis</red-info>
+          <red-info>Glumci: animirani film</red-info>
+        </info>
       </film>
+
       <film class="uskoro">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Elio</naziv-filma><trajanje>98 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/dFgvhUAoUH5JBUHSIoBvhJNpAqW.jpg" alt="Elio" /></poster>
+        <info>
+          <naziv-filma>Elio</naziv-filma>
+          <red-info>Minutaža: 98 min</red-info>
+          <red-info>Režiser: Madeline Sharafian</red-info>
+          <red-info>Glumci: Yonas Kibreab, Zoe Saldana</red-info>
+        </info>
       </film>
+
       <film class="uskoro">
-        <poster><svg viewBox="0 0 24 24" fill="#2266a8"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Zootopia 2</naziv-filma><trajanje>105 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/zeaFkJkqVFkFsLRqMBBcnYIoFyM.jpg" alt="Zootopia 2" /></poster>
+        <info>
+          <naziv-filma>Zootopia 2</naziv-filma>
+          <red-info>Minutaža: 105 min</red-info>
+          <red-info>Režiser: Byron Howard</red-info>
+          <red-info>Glumci: Ginnifer Goodwin, Jason Bateman</red-info>
+        </info>
       </film>
+
       <film class="zavrseno">
-        <poster><svg viewBox="0 0 24 24" fill="#888"><path d="M8 5v14l11-7z"/></svg></poster>
-        <info><naziv-filma>Moana 2</naziv-filma><trajanje>100 min</trajanje></info>
+        <poster><img src="https://image.tmdb.org/t/p/w300/nDSAECiI5EbkSHLInhBAoGKseHd.jpg" alt="Moana 2" /></poster>
+        <info>
+          <naziv-filma>Moana 2</naziv-filma>
+          <red-info>Minutaža: 100 min</red-info>
+          <red-info>Režiser: David Derrick Jr.</red-info>
+          <red-info>Glumci: Auli'i Cravalho, Dwayne Johnson</red-info>
+        </info>
       </film>
+
     </mreza>
   </zanr>
 
 </glavna>
 
-<div id="raspored"></div>
-<div id="sala"></div>
+<podnozje>© 2026 Kino Sala. All rights reserved.</podnozje>
+
+<div id="pocetna"></div>
+<div id="kontakt"></div>
 
 </body>
 </html>
