@@ -222,3 +222,39 @@ podnozje {
   sadrzaj-sale { flex-direction: column; }
   sjediste { width: 26px; height: 26px; }
 }
+
+sjediste.slobodno { cursor: pointer; }
+
+.navigacija-projekcija {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.navigacija-projekcija button {
+  font-size: 0.85rem;
+  color: #1a2e42;
+  background: #d6e8f5;
+  border: 1px solid #9ab8d4;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.navigacija-projekcija button:hover:not(:disabled) {
+  background: #c2d8ed;
+}
+
+.navigacija-projekcija button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.greska {
+  color: #c62828;
+  font-size: 0.95rem;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #9ab8d4;
+}
