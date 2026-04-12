@@ -9,6 +9,10 @@ const PUTANJA_JSON = path.join(__dirname, 'data', 'projekcije.json');
 app.use(express.json());
 app.use(express.static(__dirname));
 
+app.get('/', (req, res) => {
+    res.redirect('/html/sala.html');
+});
+
 app.get('/api/projekcije', (req, res) => {
     const podaci = fs.readFileSync(PUTANJA_JSON, 'utf-8');
     res.json(JSON.parse(podaci));
