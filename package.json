@@ -1,0 +1,24 @@
+{
+  "name": "kinomensurdemirovic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mensurdemirovic/kinoMensurDemirovic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mensurdemirovic/kinoMensurDemirovic/issues"
+  },
+  "homepage": "https://github.com/mensurdemirovic/kinoMensurDemirovic#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
